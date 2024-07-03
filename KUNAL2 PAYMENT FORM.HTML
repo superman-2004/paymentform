@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="payment form.css">
+</head>
+<body>
+    <div class="container">
+    <h2><b>Payment form</b></h2>
+    <h3><b>Contact information</b></h3>
+<form> 
+<p>
+    <!--Name Section-->
+    <fieldset>
+    <legend><i>Name</i></legend>
+    <p> <b>NAME SHOULD BE IN CAPTIAL LETTER</b></p>
+    <p>Name<input type="text" name="NAME" placeholder="Omm Praksh" required></p>
+    </fieldset>
+    <!--Gender Section-->
+    <fieldset>
+        <legend><i>Gender</i></h3></legend>
+        Male <input type="radio" name="Gender" >
+        Female <input type="radio" name="Gender">
+        Other <input type="radio" name="Gender">
+    </fieldset>
+    <!--Address Section-->
+    <fieldset>
+        <legend><i>Address</i></legend>
+        Address: <textarea name="Address" id="" cols="30" rows="6" placeholder="at/po/Kendrapara 
+Pin Code"></textarea>
+    </fieldset>
+    <!--Date of birth section-->
+    <fieldset>
+        <legend><i>DOB</i></legend>
+        DATE OF BIRTH <input type="date" name="DATE OF BIRTH" id="DATE OF BIRTH placeholder="20-04-2004" required>
+    </fieldset>
+    <!--Email id section-->
+    <fieldset>
+        <legend><i>Email</i></legend>
+        Email <input type="email" name="email" id="email" placeholder="123@gmail.com" required>
+    </fieldset>
+    <!--Pin code section-->
+    <fieldset>
+        <legend><i>Pincode</i></legend>
+        Pincode <input type="number" name="pincode" id="pincode" placeholder="754250" required>
+    </fieldset>
+    </p>
+    <header><h3>Payment Details</h3></header>
+    <p>
+    <fieldset>
+        <legend>Bank Details</legend>
+        Bank Name: <select> <!--Select Tag means that is will show the Option-->
+            <option value="">--Select a bank type--</option required>
+            <option value="HDFC Bank">HDFC Bank</option>
+            <option value="IDFC Bank">IDFC Bank</option>
+            <option value="SBI Bank">SBI Bank</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend><i>Card Details</i></legend>
+        Card Details: 
+        <select name="Card_Type" id="Card_type">
+         <option value="">--Select a Card Type--</option>
+         <option value="Credit Card">Credit card</option>
+         <option value="Debit Card">Debit card</option>
+         <option value="Loan Card">Loan Card</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Card Number</legend>
+        Card Number: <input type="Number" name=" Number" id=" Number">
+    </fieldset>
+     <fieldset>
+        <legend>Card Experation Date</legend>
+        Card Experation Date: <input type="Date" name="exp_date" id="exp_date">
+     </fieldset>
+     <fieldset>
+        <Legend>CVV</Legend>
+        CVV: <input type="password" name="cvv" id="cvv">
+     </fieldset>
+       <input type="submit" value="Pay Now">
+     
+    </div>
+    </p>
+</form> 
+</body>
+</html>
